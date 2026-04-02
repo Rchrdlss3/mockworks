@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter, Routes } from 'react-router-dom';
+import { AppRoutes, getTheme } from './utils/constants';
+import AppHeader from './components/AppHeaderComponent';
+import { IconContext } from 'react-icons';
+import { createContext, Dispatch, SetStateAction, useState } from 'react';
+import { darkTheme, lightTheme, MockworksTheme } from './types/styles';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface ThemeContextType {
+  theme: MockworksTheme;
+  setTheme: Dispatch<SetStateAction<MockworksTheme>>
 }
 
-export default App;
+export const ThemeContext = createContext<ThemeContextType | null>(null)
+
+export default function App() {
+
+  const [theme,setTheme] = useState<MockworksTheme>(getTheme());
+  
+  return (
+    <HashRouter>
+      <ThemeContext.Provider value = {{theme,setTheme}}>
+      <IconContext.Provider value = {{}}>
+      <AppHeader /> 
+      <Routes>
+        {AppRoutes()}
+      </Routes>
+      </IconContext.Provider>
+      </ThemeContext.Provider>
+    </HashRouter>
+  );
+}
