@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4c4ec54.css",
-    "main.js": "/static/js/main.c075c78f.js",
-    "static/js/652.8f106482.chunk.js": "/static/js/652.8f106482.chunk.js",
-    "static/js/126.6683ed89.chunk.js": "/static/js/126.6683ed89.chunk.js",
-    "static/js/983.c8be8ad2.chunk.js": "/static/js/983.c8be8ad2.chunk.js",
-    "index.html": "/index.html",
-    "main.a4c4ec54.css.map": "/static/css/main.a4c4ec54.css.map",
-    "main.c075c78f.js.map": "/static/js/main.c075c78f.js.map",
-    "652.8f106482.chunk.js.map": "/static/js/652.8f106482.chunk.js.map",
-    "126.6683ed89.chunk.js.map": "/static/js/126.6683ed89.chunk.js.map",
-    "983.c8be8ad2.chunk.js.map": "/static/js/983.c8be8ad2.chunk.js.map"
+    "main.css": "/mockworks/static/css/main.a4c4ec54.css",
+    "main.js": "/mockworks/static/js/main.ff317c42.js",
+    "static/js/652.8f106482.chunk.js": "/mockworks/static/js/652.8f106482.chunk.js",
+    "static/js/126.6683ed89.chunk.js": "/mockworks/static/js/126.6683ed89.chunk.js",
+    "static/js/983.c8be8ad2.chunk.js": "/mockworks/static/js/983.c8be8ad2.chunk.js",
+    "index.html": "/mockworks/index.html",
+    "main.a4c4ec54.css.map": "/mockworks/static/css/main.a4c4ec54.css.map",
+    "main.ff317c42.js.map": "/mockworks/static/js/main.ff317c42.js.map",
+    "652.8f106482.chunk.js.map": "/mockworks/static/js/652.8f106482.chunk.js.map",
+    "126.6683ed89.chunk.js.map": "/mockworks/static/js/126.6683ed89.chunk.js.map",
+    "983.c8be8ad2.chunk.js.map": "/mockworks/static/js/983.c8be8ad2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a4c4ec54.css",
-    "static/js/main.c075c78f.js"
+    "static/js/main.ff317c42.js"
   ]
 }
